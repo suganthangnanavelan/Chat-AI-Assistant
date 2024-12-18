@@ -1,0 +1,2349 @@
+{
+  "settings": {
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "for,goodbye,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,okay,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdy": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "good,morning": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "evening,good": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "is,name,what,your": {
+            "intent": "identity.name",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "identity.name",
+            "domain": "default"
+          },
+          "me,name,tell,your": {
+            "intent": "identity.name",
+            "domain": "default"
+          },
+          "a,do,have,name,you": {
+            "intent": "identity.name",
+            "domain": "default"
+          },
+          "are,quill,you": {
+            "intent": "identity.name.confirmation",
+            "domain": "default"
+          },
+          "is,name,quill,your": {
+            "intent": "identity.name.confirmation",
+            "domain": "default"
+          },
+          "are,what,you": {
+            "intent": "identity.role",
+            "domain": "default"
+          },
+          "a,are,bot,you": {
+            "intent": "identity.role",
+            "domain": "default"
+          },
+          "ai,an,are,you": {
+            "intent": "identity.role",
+            "domain": "default"
+          },
+          "a,are,human,you": {
+            "intent": "identity.role",
+            "domain": "default"
+          },
+          "is,purpose,what,your": {
+            "intent": "identity.purpose",
+            "domain": "default"
+          },
+          "created,were,why,you": {
+            "intent": "identity.purpose",
+            "domain": "default"
+          },
+          "do,what,you": {
+            "intent": "identity.purpose",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "personal.thankyou",
+            "domain": "default"
+          },
+          "thankyou": {
+            "intent": "personal.thankyou",
+            "domain": "default"
+          },
+          "a,lot,thanks": {
+            "intent": "personal.thankyou",
+            "domain": "default"
+          },
+          "thanks": {
+            "intent": "personal.thankyou",
+            "domain": "default"
+          },
+          "much,so,thank,you": {
+            "intent": "personal.thankyou",
+            "domain": "default"
+          },
+          "is,nlp,what": {
+            "intent": "tech.nlp",
+            "domain": "default"
+          },
+          "explain,language,natural,processing": {
+            "intent": "tech.nlp",
+            "domain": "default"
+          },
+          "does,for,nlp,stand,what": {
+            "intent": "tech.nlp",
+            "domain": "default"
+          },
+          "is,nlu,what": {
+            "intent": "tech.nlu",
+            "domain": "default"
+          },
+          "explain,language,natural,understanding": {
+            "intent": "tech.nlu",
+            "domain": "default"
+          },
+          "does,mean,nlu,what": {
+            "intent": "tech.nlu",
+            "domain": "default"
+          },
+          "is,nlg,what": {
+            "intent": "tech.nlg",
+            "domain": "default"
+          },
+          "explain,generation,language,natural": {
+            "intent": "tech.nlg",
+            "domain": "default"
+          },
+          "does,for,nlg,stand,what": {
+            "intent": "tech.nlg",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "personal.state",
+            "domain": "default"
+          },
+          "are,going,how,things": {
+            "intent": "personal.state",
+            "domain": "default"
+          },
+          "going,how,is,it": {
+            "intent": "personal.state",
+            "domain": "default"
+          },
+          "do,feel,how,you": {
+            "intent": "personal.state",
+            "domain": "default"
+          },
+          "a,joke,me,tell": {
+            "intent": "fun.joke",
+            "domain": "default"
+          },
+          "laugh,make,me": {
+            "intent": "fun.joke",
+            "domain": "default"
+          },
+          "funny,say,something": {
+            "intent": "fun.joke",
+            "domain": "default"
+          },
+          "a,give,joke,me": {
+            "intent": "fun.joke",
+            "domain": "default"
+          },
+          "a,joke,me,programmer,tell": {
+            "intent": "fun.joke",
+            "domain": "default"
+          },
+          "a,coding,joke,say": {
+            "intent": "fun.joke",
+            "domain": "default"
+          },
+          "a,about,joke,me,programming,tell": {
+            "intent": "fun.joke",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "identity.name": "default",
+          "identity.name.confirmation": "default",
+          "identity.role": "default",
+          "identity.purpose": "default",
+          "personal.thankyou": "default",
+          "tech.nlp": "default",
+          "tech.nlu": "default",
+          "tech.nlg": "default",
+          "personal.state": "default",
+          "fun.joke": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "goodbye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your name",
+            "intent": "identity.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "who are you",
+            "intent": "identity.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me your name",
+            "intent": "identity.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you have a name",
+            "intent": "identity.name"
+          },
+          {
+            "domain": "default",
+            "utterance": "are you quill",
+            "intent": "identity.name.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "is your name quill",
+            "intent": "identity.name.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "your name is quill",
+            "intent": "identity.name.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "what are you",
+            "intent": "identity.role"
+          },
+          {
+            "domain": "default",
+            "utterance": "are you a bot",
+            "intent": "identity.role"
+          },
+          {
+            "domain": "default",
+            "utterance": "are you an AI",
+            "intent": "identity.role"
+          },
+          {
+            "domain": "default",
+            "utterance": "are you a human",
+            "intent": "identity.role"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your purpose",
+            "intent": "identity.purpose"
+          },
+          {
+            "domain": "default",
+            "utterance": "why were you created",
+            "intent": "identity.purpose"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do you do",
+            "intent": "identity.purpose"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "personal.thankyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "thankyou",
+            "intent": "personal.thankyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks a lot",
+            "intent": "personal.thankyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks",
+            "intent": "personal.thankyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you so much",
+            "intent": "personal.thankyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is NLP",
+            "intent": "tech.nlp"
+          },
+          {
+            "domain": "default",
+            "utterance": "explain natural language processing",
+            "intent": "tech.nlp"
+          },
+          {
+            "domain": "default",
+            "utterance": "what does NLP stand for",
+            "intent": "tech.nlp"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is NLU",
+            "intent": "tech.nlu"
+          },
+          {
+            "domain": "default",
+            "utterance": "explain natural language understanding",
+            "intent": "tech.nlu"
+          },
+          {
+            "domain": "default",
+            "utterance": "what does NLU mean",
+            "intent": "tech.nlu"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is NLG",
+            "intent": "tech.nlg"
+          },
+          {
+            "domain": "default",
+            "utterance": "explain natural language generation",
+            "intent": "tech.nlg"
+          },
+          {
+            "domain": "default",
+            "utterance": "what does NLG stand for",
+            "intent": "tech.nlg"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "personal.state"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are things going",
+            "intent": "personal.state"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is it going",
+            "intent": "personal.state"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do you feel",
+            "intent": "personal.state"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me a joke",
+            "intent": "fun.joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "make me laugh",
+            "intent": "fun.joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "say something funny",
+            "intent": "fun.joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me a joke",
+            "intent": "fun.joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me a programmer joke",
+            "intent": "fun.joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "say a coding joke",
+            "intent": "fun.joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me a joke about programming",
+            "intent": "fun.joke"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "goodbye": 1,
+              "for": 1,
+              "now": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "okay": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdy": 1,
+              "hey": 1,
+              "good": 1,
+              "morning": 1,
+              "evening": 1,
+              "what": 1,
+              "is": 1,
+              "your": 1,
+              "name": 1,
+              "who": 1,
+              "are": 1,
+              "tell": 1,
+              "me": 1,
+              "do": 1,
+              "have": 1,
+              "a": 1,
+              "quill": 1,
+              "bot": 1,
+              "an": 1,
+              "ai": 1,
+              "human": 1,
+              "purpose": 1,
+              "why": 1,
+              "were": 1,
+              "created": 1,
+              "thank": 1,
+              "thankyou": 1,
+              "thanks": 1,
+              "lot": 1,
+              "so": 1,
+              "much": 1,
+              "nlp": 1,
+              "explain": 1,
+              "natural": 1,
+              "language": 1,
+              "processing": 1,
+              "does": 1,
+              "stand": 1,
+              "nlu": 1,
+              "understanding": 1,
+              "mean": 1,
+              "nlg": 1,
+              "generation": 1,
+              "how": 1,
+              "things": 1,
+              "going": 1,
+              "it": 1,
+              "feel": 1,
+              "joke": 1,
+              "make": 1,
+              "laugh": 1,
+              "say": 1,
+              "something": 1,
+              "funny": 1,
+              "give": 1,
+              "programmer": 1,
+              "coding": 1,
+              "about": 1,
+              "programming": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "identity.name": 1,
+              "identity.name.confirmation": 1,
+              "identity.role": 1,
+              "identity.purpose": 1,
+              "personal.thankyou": 1,
+              "tech.nlp": 1,
+              "tech.nlu": 1,
+              "tech.nlg": 1,
+              "personal.state": 1,
+              "fun.joke": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "goodbye": 1,
+                "for": 1,
+                "now": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "okay": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "howdy": 1,
+                "hey": 1,
+                "good": 1,
+                "morning": 1,
+                "evening": 1
+              },
+              "identity.name": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1,
+                "who": 1,
+                "are": 1,
+                "you": 1,
+                "tell": 1,
+                "me": 1,
+                "do": 1,
+                "have": 1,
+                "a": 1
+              },
+              "identity.name.confirmation": {
+                "are": 1,
+                "you": 1,
+                "quill": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1
+              },
+              "identity.role": {
+                "what": 1,
+                "are": 1,
+                "you": 1,
+                "a": 1,
+                "bot": 1,
+                "an": 1,
+                "ai": 1,
+                "human": 1
+              },
+              "identity.purpose": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "purpose": 1,
+                "why": 1,
+                "were": 1,
+                "you": 1,
+                "created": 1,
+                "do": 1
+              },
+              "personal.thankyou": {
+                "thank": 1,
+                "you": 1,
+                "thankyou": 1,
+                "thanks": 1,
+                "a": 1,
+                "lot": 1,
+                "so": 1,
+                "much": 1
+              },
+              "tech.nlp": {
+                "what": 1,
+                "is": 1,
+                "nlp": 1,
+                "explain": 1,
+                "natural": 1,
+                "language": 1,
+                "processing": 1,
+                "does": 1,
+                "stand": 1,
+                "for": 1
+              },
+              "tech.nlu": {
+                "what": 1,
+                "is": 1,
+                "nlu": 1,
+                "explain": 1,
+                "natural": 1,
+                "language": 1,
+                "understanding": 1,
+                "does": 1,
+                "mean": 1
+              },
+              "tech.nlg": {
+                "what": 1,
+                "is": 1,
+                "nlg": 1,
+                "explain": 1,
+                "natural": 1,
+                "language": 1,
+                "generation": 1,
+                "does": 1,
+                "stand": 1,
+                "for": 1
+              },
+              "personal.state": {
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "things": 1,
+                "going": 1,
+                "is": 1,
+                "it": 1,
+                "do": 1,
+                "feel": 1
+              },
+              "fun.joke": {
+                "tell": 1,
+                "me": 1,
+                "a": 1,
+                "joke": 1,
+                "make": 1,
+                "laugh": 1,
+                "say": 1,
+                "something": 1,
+                "funny": 1,
+                "give": 1,
+                "programmer": 1,
+                "coding": 1,
+                "about": 1,
+                "programming": 1
+              }
+            },
+            "featuresToIntent": {
+              "goodbye": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye",
+                "tech.nlp",
+                "tech.nlg"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "okay": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye",
+                "identity.name",
+                "identity.name.confirmation",
+                "identity.role",
+                "identity.purpose",
+                "personal.thankyou",
+                "personal.state"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "howdy": [
+                "greetings.hello"
+              ],
+              "hey": [
+                "greetings.hello"
+              ],
+              "good": [
+                "greetings.hello"
+              ],
+              "morning": [
+                "greetings.hello"
+              ],
+              "evening": [
+                "greetings.hello"
+              ],
+              "what": [
+                "identity.name",
+                "identity.role",
+                "identity.purpose",
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg"
+              ],
+              "is": [
+                "identity.name",
+                "identity.name.confirmation",
+                "identity.purpose",
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg",
+                "personal.state"
+              ],
+              "your": [
+                "identity.name",
+                "identity.name.confirmation",
+                "identity.purpose"
+              ],
+              "name": [
+                "identity.name",
+                "identity.name.confirmation"
+              ],
+              "who": [
+                "identity.name"
+              ],
+              "are": [
+                "identity.name",
+                "identity.name.confirmation",
+                "identity.role",
+                "personal.state"
+              ],
+              "tell": [
+                "identity.name",
+                "fun.joke"
+              ],
+              "me": [
+                "identity.name",
+                "fun.joke"
+              ],
+              "do": [
+                "identity.name",
+                "identity.purpose",
+                "personal.state"
+              ],
+              "have": [
+                "identity.name"
+              ],
+              "a": [
+                "identity.name",
+                "identity.role",
+                "personal.thankyou",
+                "fun.joke"
+              ],
+              "quill": [
+                "identity.name.confirmation"
+              ],
+              "bot": [
+                "identity.role"
+              ],
+              "an": [
+                "identity.role"
+              ],
+              "ai": [
+                "identity.role"
+              ],
+              "human": [
+                "identity.role"
+              ],
+              "purpose": [
+                "identity.purpose"
+              ],
+              "why": [
+                "identity.purpose"
+              ],
+              "were": [
+                "identity.purpose"
+              ],
+              "created": [
+                "identity.purpose"
+              ],
+              "thank": [
+                "personal.thankyou"
+              ],
+              "thankyou": [
+                "personal.thankyou"
+              ],
+              "thanks": [
+                "personal.thankyou"
+              ],
+              "lot": [
+                "personal.thankyou"
+              ],
+              "so": [
+                "personal.thankyou"
+              ],
+              "much": [
+                "personal.thankyou"
+              ],
+              "nlp": [
+                "tech.nlp"
+              ],
+              "explain": [
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg"
+              ],
+              "natural": [
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg"
+              ],
+              "language": [
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg"
+              ],
+              "processing": [
+                "tech.nlp"
+              ],
+              "does": [
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg"
+              ],
+              "stand": [
+                "tech.nlp",
+                "tech.nlg"
+              ],
+              "nlu": [
+                "tech.nlu"
+              ],
+              "understanding": [
+                "tech.nlu"
+              ],
+              "mean": [
+                "tech.nlu"
+              ],
+              "nlg": [
+                "tech.nlg"
+              ],
+              "generation": [
+                "tech.nlg"
+              ],
+              "how": [
+                "personal.state"
+              ],
+              "things": [
+                "personal.state"
+              ],
+              "going": [
+                "personal.state"
+              ],
+              "it": [
+                "personal.state"
+              ],
+              "feel": [
+                "personal.state"
+              ],
+              "joke": [
+                "fun.joke"
+              ],
+              "make": [
+                "fun.joke"
+              ],
+              "laugh": [
+                "fun.joke"
+              ],
+              "say": [
+                "fun.joke"
+              ],
+              "something": [
+                "fun.joke"
+              ],
+              "funny": [
+                "fun.joke"
+              ],
+              "give": [
+                "fun.joke"
+              ],
+              "programmer": [
+                "fun.joke"
+              ],
+              "coding": [
+                "fun.joke"
+              ],
+              "about": [
+                "fun.joke"
+              ],
+              "programming": [
+                "fun.joke"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "goodbye",
+                "for",
+                "now",
+                "bye",
+                "take",
+                "care",
+                "okay",
+                "see",
+                "you",
+                "later",
+                "i",
+                "must",
+                "go",
+                "hello",
+                "hi",
+                "howdy",
+                "hey",
+                "good",
+                "morning",
+                "evening",
+                "what",
+                "is",
+                "your",
+                "name",
+                "who",
+                "are",
+                "tell",
+                "me",
+                "do",
+                "have",
+                "a",
+                "quill",
+                "bot",
+                "an",
+                "ai",
+                "human",
+                "purpose",
+                "why",
+                "were",
+                "created",
+                "thank",
+                "thankyou",
+                "thanks",
+                "lot",
+                "so",
+                "much",
+                "nlp",
+                "explain",
+                "natural",
+                "language",
+                "processing",
+                "does",
+                "stand",
+                "nlu",
+                "understanding",
+                "mean",
+                "nlg",
+                "generation",
+                "how",
+                "things",
+                "going",
+                "it",
+                "feel",
+                "joke",
+                "make",
+                "laugh",
+                "say",
+                "something",
+                "funny",
+                "give",
+                "programmer",
+                "coding",
+                "about",
+                "programming"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "identity.name",
+                "identity.name.confirmation",
+                "identity.role",
+                "identity.purpose",
+                "personal.thankyou",
+                "tech.nlp",
+                "tech.nlu",
+                "tech.nlg",
+                "personal.state",
+                "fun.joke"
+              ],
+              "perceptrons": [
+                [
+                  4.502841949462891,
+                  3.6543424129486084,
+                  4.915351867675781,
+                  4.641789436340332,
+                  4.231524467468262,
+                  4.231524467468262,
+                  4.328943729400635,
+                  4.328943729400635,
+                  0.1503177285194397,
+                  4.328943729400635,
+                  4.380512714385986,
+                  4.380512714385986,
+                  4.380512714385986,
+                  -1.1573902368545532,
+                  -1.144135594367981,
+                  -1.142377257347107,
+                  -1.1410292387008667,
+                  -1.0605930089950562,
+                  -0.5300135612487793,
+                  -0.4767104387283325,
+                  -1.9465258121490479,
+                  -0.5917614102363586,
+                  -0.5398806929588318,
+                  -0.7730030417442322,
+                  -0.37901395559310913,
+                  -1.5123953819274902,
+                  -0.20911002159118652,
+                  -0.5963214635848999,
+                  -0.7427253723144531,
+                  -0.23607560992240906,
+                  -0.8495335578918457,
+                  -0.45507749915122986,
+                  -0.14806996285915375,
+                  -0.2376900315284729,
+                  -0.2376900315284729,
+                  -0.07146341353654861,
+                  -0.03831234946846962,
+                  -0.5800020694732666,
+                  -0.5800020694732666,
+                  -0.5800020694732666,
+                  -1.2930538654327393,
+                  -1.134946346282959,
+                  -1.1356263160705566,
+                  -0.1914372742176056,
+                  -0.3244846761226654,
+                  -0.3244846761226654,
+                  -0.6646741628646851,
+                  -0.463311105966568,
+                  -0.463311105966568,
+                  -0.463311105966568,
+                  -0.1815972924232483,
+                  -1.260866403579712,
+                  -1.2397078275680542,
+                  -0.016311079263687134,
+                  -0.12479544430971146,
+                  -0.014438879676163197,
+                  -0.5419212579727173,
+                  -0.09754510223865509,
+                  -0.494717001914978,
+                  0,
+                  -0.2029847651720047,
+                  -0.2029847651720047,
+                  -0.2662900686264038,
+                  -0.07795447111129761,
+                  -0.35009005665779114,
+                  -0.35009005665779114,
+                  -0.4655561149120331,
+                  -0.40444979071617126,
+                  -0.40444979071617126,
+                  -0.007264263462275267,
+                  0,
+                  -0.049946848303079605,
+                  0,
+                  0,
+                  1.1433828193940727
+                ],
+                [
+                  -1.423619270324707,
+                  -2.1585521697998047,
+                  -1.8410146236419678,
+                  -2.085913896560669,
+                  -1.66851806640625,
+                  -1.66851806640625,
+                  -0.45856019854545593,
+                  -0.45856019854545593,
+                  -4.048356533050537,
+                  -0.45856019854545593,
+                  -1.8075131177902222,
+                  -1.8075131177902222,
+                  -1.8075131177902222,
+                  8.809536933898926,
+                  8.809341430664062,
+                  8.791566848754883,
+                  8.772432327270508,
+                  5.898929119110107,
+                  2.9524612426757812,
+                  2.9464287757873535,
+                  -2.6972591876983643,
+                  -2.2500059604644775,
+                  -1.2838187217712402,
+                  -1.3431031703948975,
+                  -0.39490747451782227,
+                  -2.0318007469177246,
+                  -0.6611928939819336,
+                  -2.3818492889404297,
+                  -0.3256722390651703,
+                  -0.15683600306510925,
+                  -2.027505874633789,
+                  -0.6009371876716614,
+                  -0.0848347395658493,
+                  -0.1730380803346634,
+                  -0.1730380803346634,
+                  -0.0365411639213562,
+                  -0.12908555567264557,
+                  -0.5632470846176147,
+                  -0.5632470846176147,
+                  -0.5632470846176147,
+                  -1.3995935916900635,
+                  -5.334477424621582,
+                  -5.326854705810547,
+                  -0.7651801109313965,
+                  -0.23365651071071625,
+                  -0.23365651071071625,
+                  -0.543919563293457,
+                  -1.6389468908309937,
+                  -1.6389468908309937,
+                  -1.6389468908309937,
+                  -0.5943527221679688,
+                  -1.057499885559082,
+                  -0.2973497211933136,
+                  -0.9320467710494995,
+                  -0.5314658880233765,
+                  -0.7399622797966003,
+                  -0.4778642952442169,
+                  -0.5089511275291443,
+                  -1.3167002201080322,
+                  -0.7634269595146179,
+                  -1.3137718439102173,
+                  -0.5502894520759583,
+                  -0.0019361504819244146,
+                  -0.830830991268158,
+                  -1.5213749408721924,
+                  -1.5213749408721924,
+                  -2.112050771713257,
+                  -1.65639066696167,
+                  -1.65639066696167,
+                  -0.18648260831832886,
+                  -0.0034517748281359673,
+                  -0.45543771982192993,
+                  0,
+                  0,
+                  5.426564398434057
+                ],
+                [
+                  0,
+                  -0.08203274011611938,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.16913683712482452,
+                  -0.16913683712482452,
+                  -0.2905953824520111,
+                  -0.16913683712482452,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.3746214210987091,
+                  -0.1301538497209549,
+                  2.961613178253174,
+                  10.31180477142334,
+                  13.310314178466797,
+                  0.9216496348381042,
+                  1.0364521741867065,
+                  0.3408481478691101,
+                  0.045596081763505936,
+                  4.699249267578125,
+                  -0.23369070887565613,
+                  -12.680279731750488,
+                  -1.3647502660751343,
+                  -1.0193473100662231,
+                  -1.0193473100662231,
+                  -1.227911114692688,
+                  -2.6296370029449463,
+                  -0.409606009721756,
+                  -0.409606009721756,
+                  -0.409606009721756,
+                  -0.6401512622833252,
+                  -0.08516272902488708,
+                  -0.1576327383518219,
+                  -0.07874693721532822,
+                  -0.16598360240459442,
+                  -0.16598360240459442,
+                  -0.06556851416826248,
+                  -0.08760956674814224,
+                  -0.08760956674814224,
+                  -0.08760956674814224,
+                  -0.028430087491869926,
+                  -0.15976358950138092,
+                  -0.08203274011611938,
+                  -0.07248805463314056,
+                  -0.02182350493967533,
+                  -0.07248805463314056,
+                  -0.010838323272764683,
+                  -0.015417293645441532,
+                  -1.4398796558380127,
+                  -0.00497788330540061,
+                  -0.00497788330540061,
+                  0,
+                  -0.6476786136627197,
+                  -2.2005231380462646,
+                  -0.5461400747299194,
+                  -0.5461400747299194,
+                  -0.009418676607310772,
+                  -0.009418676607310772,
+                  -0.009418676607310772,
+                  -0.09642760455608368,
+                  -0.538727879524231,
+                  0,
+                  -0.3174487352371216,
+                  -0.3174487352371216,
+                  -0.3445028298303744
+                ],
+                [
+                  -0.031011689454317093,
+                  -0.05707312747836113,
+                  -0.05707312747836113,
+                  -0.05791827663779259,
+                  -0.03185783326625824,
+                  -0.03185783326625824,
+                  -0.11923254281282425,
+                  -0.11923254281282425,
+                  0.6919953227043152,
+                  -0.11923254281282425,
+                  -0.03064451366662979,
+                  -0.03064451366662979,
+                  -0.03064451366662979,
+                  -0.03824620321393013,
+                  -0.03678296506404877,
+                  -0.035375356674194336,
+                  -0.0340212881565094,
+                  -0.054470788687467575,
+                  -0.02467287890613079,
+                  -0.02213992178440094,
+                  -3.5987603664398193,
+                  0.8962310552597046,
+                  0.5753214359283447,
+                  1.0177704095840454,
+                  -1.9392277002334595,
+                  1.657038927078247,
+                  -1.2576053142547607,
+                  -1.2910958528518677,
+                  -0.33768150210380554,
+                  -0.3124297559261322,
+                  -1.474941611289978,
+                  12.144317626953125,
+                  -0.5292456150054932,
+                  -1.004472017288208,
+                  -1.004472017288208,
+                  -0.5407137870788574,
+                  -0.6573923230171204,
+                  -0.1750299334526062,
+                  -0.1750299334526062,
+                  -0.1750299334526062,
+                  -0.38249433040618896,
+                  -0.10893554240465164,
+                  -0.13027748465538025,
+                  -0.025421882048249245,
+                  -0.10393599420785904,
+                  -0.10393599420785904,
+                  -0.15480995178222656,
+                  -0.11751128733158112,
+                  -0.11751128733158112,
+                  -0.11751128733158112,
+                  -0.0428476557135582,
+                  0,
+                  0,
+                  -0.13453401625156403,
+                  -0.02880886197090149,
+                  0,
+                  -0.11071831732988358,
+                  -0.01616867631673813,
+                  -1.9747436046600342,
+                  -0.07750990241765976,
+                  -0.46156439185142517,
+                  -0.35443785786628723,
+                  0,
+                  -0.017040330916643143,
+                  -0.020060863345861435,
+                  -0.020060863345861435,
+                  -0.03907885402441025,
+                  -0.03583452105522156,
+                  -0.03583452105522156,
+                  -0.0022884851787239313,
+                  -0.0005574999959208071,
+                  -0.0010353479301556945,
+                  0,
+                  0,
+                  -0.33819836922460644
+                ],
+                [
+                  0,
+                  -0.5774194598197937,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.3753017485141754,
+                  -0.3753017485141754,
+                  1.4004864692687988,
+                  -0.3753017485141754,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  6.8966474533081055,
+                  -2.599290132522583,
+                  -0.5914192795753479,
+                  -0.7020630836486816,
+                  -6.120362758636475,
+                  8.09562873840332,
+                  -0.4206705689430237,
+                  -0.746339738368988,
+                  -4.895174503326416,
+                  -0.7020630836486816,
+                  4.246513843536377,
+                  -6.030216693878174,
+                  3.7259185314178467,
+                  3.964874029159546,
+                  3.964874029159546,
+                  3.6281192302703857,
+                  -0.5914192795753479,
+                  -0.6768694519996643,
+                  -0.6768694519996643,
+                  -0.6768694519996643,
+                  -1.3684147596359253,
+                  -0.08348648995161057,
+                  -1.1905149221420288,
+                  -1.1167999505996704,
+                  -0.407247394323349,
+                  -0.407247394323349,
+                  -1.130479335784912,
+                  -0.10360101610422134,
+                  -0.10360101610422134,
+                  -0.10360101610422134,
+                  -0.029232267290353775,
+                  -1.5048444271087646,
+                  -0.5774194598197937,
+                  -1.2837773561477661,
+                  -0.023432133719325066,
+                  -0.921477735042572,
+                  -1.0914950370788574,
+                  -0.017296351492404938,
+                  -6.210892200469971,
+                  -0.7412920594215393,
+                  -0.7412920594215393,
+                  0,
+                  -0.09474685043096542,
+                  -1.2435870170593262,
+                  -0.0025886648800224066,
+                  -0.0025886648800224066,
+                  -0.509839653968811,
+                  -0.005572079680860043,
+                  -0.005572079680860043,
+                  -0.31231972575187683,
+                  -0.10948137193918228,
+                  -0.4986962080001831,
+                  -0.034421637654304504,
+                  -0.034421637654304504,
+                  -3.1485835128115216
+                ],
+                [
+                  -0.003019256517291069,
+                  -0.5155454874038696,
+                  -0.003019256517291069,
+                  -0.025976166129112244,
+                  -0.025976166129112244,
+                  -0.025976166129112244,
+                  -0.7456554770469666,
+                  -0.7456554770469666,
+                  2.4985334873199463,
+                  -0.7456554770469666,
+                  -0.010524436831474304,
+                  -0.010524436831474304,
+                  -0.010524436831474304,
+                  -0.014226305298507214,
+                  -0.013660542666912079,
+                  -0.013117230497300625,
+                  -0.012595479376614094,
+                  -0.019814210012555122,
+                  -0.008478703908622265,
+                  -0.007666065823286772,
+                  4.880426406860352,
+                  -1.782100796699524,
+                  3.7318336963653564,
+                  -5.969429969787598,
+                  -0.32489290833473206,
+                  -6.25508451461792,
+                  -0.15685811638832092,
+                  -0.19496282935142517,
+                  7.348019599914551,
+                  -1.369304895401001,
+                  -1.57842218875885,
+                  -0.24157282710075378,
+                  -0.008625992573797703,
+                  -0.02194051817059517,
+                  -0.02194051817059517,
+                  0,
+                  8.328977584838867,
+                  4.218135356903076,
+                  4.218135356903076,
+                  4.218135356903076,
+                  -2.0301015377044678,
+                  -0.26710212230682373,
+                  -0.36987611651420593,
+                  -0.12598629295825958,
+                  -0.6003979444503784,
+                  -0.6003979444503784,
+                  -2.2192020416259766,
+                  -0.17933045327663422,
+                  -0.17933045327663422,
+                  -0.17933045327663422,
+                  -0.09156620502471924,
+                  -1.1212432384490967,
+                  -0.5085688233375549,
+                  -2.31571888923645,
+                  -0.0402141772210598,
+                  -0.576208233833313,
+                  -2.2355477809906006,
+                  -0.011582303792238235,
+                  -4.677709579467773,
+                  -0.006684119813144207,
+                  -0.019675498828291893,
+                  -0.0079782884567976,
+                  -4.193355083465576,
+                  -0.03289108723402023,
+                  -0.01920892857015133,
+                  -0.01920892857015133,
+                  -0.03309134393930435,
+                  -0.027006490156054497,
+                  -0.027006490156054497,
+                  -0.0045572733506560326,
+                  -0.0023719670716673136,
+                  -0.0028158649802207947,
+                  -0.00012863127631135285,
+                  -0.00012863127631135285,
+                  -0.8520347990606825
+                ],
+                [
+                  -0.6264204382896423,
+                  -1.1241556406021118,
+                  -0.8277456164360046,
+                  -0.9935868978500366,
+                  -0.7922617793083191,
+                  -0.7922617793083191,
+                  -1.3766950368881226,
+                  -1.3766950368881226,
+                  1.5671392679214478,
+                  -1.3766950368881226,
+                  -0.8589637279510498,
+                  -0.8589637279510498,
+                  -0.8589637279510498,
+                  -2.5121009349823,
+                  -2.5018794536590576,
+                  -2.491248846054077,
+                  -2.4802181720733643,
+                  -1.7054531574249268,
+                  -0.8551587462425232,
+                  -0.8493847846984863,
+                  -1.8608696460723877,
+                  -0.925114631652832,
+                  -0.021191487088799477,
+                  -0.9795770645141602,
+                  -0.6511200070381165,
+                  -3.4640414714813232,
+                  -0.5863807201385498,
+                  -1.4979143142700195,
+                  -2.214073657989502,
+                  -0.941886842250824,
+                  -1.4300999641418457,
+                  -0.6379762291908264,
+                  -0.5914856195449829,
+                  -0.32673749327659607,
+                  -0.32673749327659607,
+                  -0.4637551009654999,
+                  0,
+                  -1.3668482303619385,
+                  -1.3668482303619385,
+                  -1.3668482303619385,
+                  9.819709777832031,
+                  11.600605964660645,
+                  11.284425735473633,
+                  2.032365083694458,
+                  0.22424174845218658,
+                  0.22424174845218658,
+                  -0.49184009432792664,
+                  -0.8000675439834595,
+                  -0.8000675439834595,
+                  -0.8000675439834595,
+                  -0.28001669049263,
+                  -0.5200845003128052,
+                  -0.2565503418445587,
+                  -0.468772828578949,
+                  -0.23393890261650085,
+                  -0.22087809443473816,
+                  -0.2608446180820465,
+                  -0.18094269931316376,
+                  -1.6049401760101318,
+                  -0.11827551573514938,
+                  -0.28166714310646057,
+                  -0.10980571061372757,
+                  -0.6537583470344543,
+                  -1.4076420068740845,
+                  -0.5409557819366455,
+                  -0.5409557819366455,
+                  -1.1768269538879395,
+                  -0.701400101184845,
+                  -0.701400101184845,
+                  -0.3219340145587921,
+                  -0.1501033902168274,
+                  -0.43704813718795776,
+                  -0.04986932501196861,
+                  -0.04986932501196861,
+                  2.5826775859761546
+                ],
+                [
+                  -0.3494640290737152,
+                  0.419915109872818,
+                  -0.6406956911087036,
+                  -0.3255155682563782,
+                  -0.04442640393972397,
+                  -0.04442640393972397,
+                  -0.023772364482283592,
+                  -0.023772364482283592,
+                  -1.0253547430038452,
+                  -0.023772364482283592,
+                  -0.061589449644088745,
+                  -0.061589449644088745,
+                  -0.061589449644088745,
+                  -0.1262224018573761,
+                  -0.12460604310035706,
+                  -0.12323588132858276,
+                  -0.12172386795282364,
+                  -0.10511238873004913,
+                  -0.05408428609371185,
+                  -0.04929180070757866,
+                  1.4041938781738281,
+                  1.5965672731399536,
+                  -2.071498155593872,
+                  -1.0438252687454224,
+                  -0.0019209292950108647,
+                  -0.5563125610351562,
+                  -0.06387601792812347,
+                  -0.16672810912132263,
+                  -0.4863419532775879,
+                  0,
+                  -0.13208651542663574,
+                  -0.006296941544860601,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.0270570516586304,
+                  -0.0007643525605089962,
+                  -0.0007643525605089962,
+                  -0.0007643525605089962,
+                  0,
+                  -0.10730468481779099,
+                  -0.10683387517929077,
+                  -0.0008417405188083649,
+                  0,
+                  0,
+                  11.107231140136719,
+                  1.3928844928741455,
+                  1.3928844928741455,
+                  1.3928844928741455,
+                  9.898706436157227,
+                  0.18612024188041687,
+                  1.0663782358169556,
+                  -3.081080913543701,
+                  -4.263327121734619,
+                  -0.818760335445404,
+                  -3.664293050765991,
+                  -4.245560646057129,
+                  -0.6503096222877502,
+                  -0.03854949027299881,
+                  -0.5545376539230347,
+                  -0.49811694025993347,
+                  -0.027118081226944923,
+                  -0.12963204085826874,
+                  -0.05430755391716957,
+                  -0.05430755391716957,
+                  -0.10429039597511292,
+                  -0.07102290540933609,
+                  -0.07102290540933609,
+                  -0.0234979297965765,
+                  -0.00955235119909048,
+                  -0.021050313487648964,
+                  -0.0032232957892119884,
+                  -0.0032232957892119884,
+                  0.11003530038712674
+                ],
+                [
+                  -0.04515347629785538,
+                  -1.2674343585968018,
+                  -0.08573922514915466,
+                  -0.16308137774467468,
+                  -0.1270839124917984,
+                  -0.1270839124917984,
+                  -0.046944741159677505,
+                  -0.046944741159677505,
+                  -1.3236944675445557,
+                  -0.046944741159677505,
+                  -0.1393708735704422,
+                  -0.1393708735704422,
+                  -0.1393708735704422,
+                  -0.21109522879123688,
+                  -0.20448870956897736,
+                  -0.198075532913208,
+                  -0.19624416530132294,
+                  -0.23171499371528625,
+                  -0.11353345215320587,
+                  -0.10177041590213776,
+                  1.5237855911254883,
+                  1.7047152519226074,
+                  -2.1108415126800537,
+                  -1.061702013015747,
+                  -0.005780890583992004,
+                  -0.761199951171875,
+                  -0.1196921318769455,
+                  -0.30597347021102905,
+                  -0.5673025250434875,
+                  0,
+                  -0.23830324411392212,
+                  -0.033727895468473434,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.0482710599899292,
+                  -0.0024923726450651884,
+                  -0.0024923726450651884,
+                  -0.0024923726450651884,
+                  0,
+                  -0.11145038902759552,
+                  -0.11081717163324356,
+                  -0.0028738209512084723,
+                  0,
+                  0,
+                  -3.0617594718933105,
+                  1.4443598985671997,
+                  1.4443598985671997,
+                  1.4443598985671997,
+                  -4.208147048950195,
+                  0.42649874091148376,
+                  -1.1680670976638794,
+                  10.857625961303711,
+                  9.90274715423584,
+                  1.6037425994873047,
+                  -3.1216135025024414,
+                  -4.2504963874816895,
+                  -0.6928400993347168,
+                  -0.06638669222593307,
+                  -0.523823618888855,
+                  -0.4243757128715515,
+                  -0.04640885069966316,
+                  -0.23203518986701965,
+                  -0.10038101673126221,
+                  -0.10038101673126221,
+                  -0.1943163275718689,
+                  -0.13532628118991852,
+                  -0.13532628118991852,
+                  -0.04168872535228729,
+                  -0.02319936640560627,
+                  -0.03656969219446182,
+                  -0.005150423385202885,
+                  -0.005150423385202885,
+                  -0.05080123052490881
+                ],
+                [
+                  -0.37520116567611694,
+                  0.27010953426361084,
+                  -0.7317810654640198,
+                  -0.44297167658805847,
+                  -0.11174407601356506,
+                  -0.11174407601356506,
+                  -0.057510856539011,
+                  -0.057510856539011,
+                  -1.1902934312820435,
+                  -0.057510856539011,
+                  -0.10912664234638214,
+                  -0.10912664234638214,
+                  -0.10912664234638214,
+                  -0.16065996885299683,
+                  -0.15475788712501526,
+                  -0.1490698903799057,
+                  -0.14358830451965332,
+                  -0.20889082551002502,
+                  -0.10244660079479218,
+                  -0.0789642333984375,
+                  1.6382440328598022,
+                  1.6506186723709106,
+                  -2.0874061584472656,
+                  -1.0565928220748901,
+                  -0.006379216909408569,
+                  -0.6662271618843079,
+                  -0.14114223420619965,
+                  -0.3786979913711548,
+                  -0.5224295854568481,
+                  0,
+                  -0.3005526661872864,
+                  -0.07995860278606415,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.0241483449935913,
+                  -0.0024381866678595543,
+                  -0.0024381866678595543,
+                  -0.0024381866678595543,
+                  0,
+                  -0.051715314388275146,
+                  -0.05324836075305939,
+                  -0.002324290107935667,
+                  0,
+                  0,
+                  -3.6427860260009766,
+                  1.4972184896469116,
+                  1.4972184896469116,
+                  1.4972184896469116,
+                  -4.2299699783325195,
+                  0.4405779540538788,
+                  1.0255790948867798,
+                  -3.000840425491333,
+                  -4.198812484741211,
+                  -0.5590558648109436,
+                  11.15128231048584,
+                  9.929370880126953,
+                  -0.6632459759712219,
+                  -0.08581700176000595,
+                  -0.4437582194805145,
+                  -0.3164529800415039,
+                  -0.060701772570610046,
+                  -0.2943366467952728,
+                  -0.12240185588598251,
+                  -0.12240185588598251,
+                  -0.22048532962799072,
+                  -0.13936448097229004,
+                  -0.13936448097229004,
+                  -0.05377614498138428,
+                  -0.02025561034679413,
+                  -0.04820229485630989,
+                  -0.0068349470384418964,
+                  -0.0068349470384418964,
+                  -0.22334325460639634
+                ],
+                [
+                  -0.1662219911813736,
+                  -0.29818010330200195,
+                  -0.29818010330200195,
+                  -0.3019219636917114,
+                  -0.17003892362117767,
+                  -0.17003892362117767,
+                  -0.33474621176719666,
+                  -0.33474621176719666,
+                  1.083343744277954,
+                  -0.33474621176719666,
+                  -0.1843859702348709,
+                  -0.1843859702348709,
+                  -0.1843859702348709,
+                  -0.235927015542984,
+                  -0.2272842973470688,
+                  -0.21895401179790497,
+                  -0.21092504262924194,
+                  -0.31177422404289246,
+                  -0.14905616641044617,
+                  -0.13339518010616302,
+                  -2.1059317588806152,
+                  0.5891741514205933,
+                  -0.3950755298137665,
+                  -0.7156683802604675,
+                  -2.1205949783325195,
+                  1.6966654062271118,
+                  -0.1795959621667862,
+                  -0.4920549988746643,
+                  0.6203573346138,
+                  -0.3681863248348236,
+                  -1.6913098096847534,
+                  -2.1090168952941895,
+                  -0.4672062397003174,
+                  -1.0640897750854492,
+                  -1.0640897750854492,
+                  -0.43308529257774353,
+                  -0.04978213086724281,
+                  -0.160654217004776,
+                  -0.160654217004776,
+                  -0.160654217004776,
+                  -0.46159064769744873,
+                  -0.03777569904923439,
+                  -0.03637973219156265,
+                  0,
+                  -0.07615393400192261,
+                  -0.07615393400192261,
+                  -0.06962469220161438,
+                  -0.03144602105021477,
+                  -0.03144602105021477,
+                  -0.03144602105021477,
+                  -0.013371936045587063,
+                  0,
+                  0,
+                  -0.055897586047649384,
+                  -0.008447888307273388,
+                  0,
+                  -0.04368607699871063,
+                  -0.004287376068532467,
+                  11.618742942810059,
+                  0.22443194687366486,
+                  1.4333529472351074,
+                  1.2174679040908813,
+                  1.6509469747543335,
+                  -0.3734854757785797,
+                  -0.1694035530090332,
+                  -0.1694035530090332,
+                  -0.2907266318798065,
+                  -0.19148969650268555,
+                  -0.19148969650268555,
+                  -0.047964975237846375,
+                  -0.03208144009113312,
+                  -0.05946645140647888,
+                  -0.010825391858816147,
+                  -0.010825391858816147,
+                  -0.5767271354719959
+                ],
+                [
+                  -0.28505465388298035,
+                  -0.5424559116363525,
+                  -0.5181072354316711,
+                  -0.570440411567688,
+                  -0.3422585725784302,
+                  -0.3422585725784302,
+                  -0.17790597677230835,
+                  -0.17790597677230835,
+                  -1.810431718826294,
+                  -0.17790597677230835,
+                  -0.38301077485084534,
+                  -0.38301077485084534,
+                  -0.38301077485084534,
+                  -0.677802324295044,
+                  -0.6666268706321716,
+                  -0.6556892991065979,
+                  -0.6469720005989075,
+                  -0.6418675184249878,
+                  -0.3131539523601532,
+                  -0.29465410113334656,
+                  -0.4065585136413574,
+                  -0.38189566135406494,
+                  -3.0471086502075195,
+                  -3.4495275020599365,
+                  -0.06463968753814697,
+                  -1.1453088521957397,
+                  0.509769082069397,
+                  5.414425373077393,
+                  -0.28115588426589966,
+                  -0.28115588426589966,
+                  2.3442652225494385,
+                  -0.0527658574283123,
+                  -0.4574563205242157,
+                  0,
+                  0,
+                  -0.36880549788475037,
+                  -0.009419665671885014,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.6097704172134399,
+                  -1.511212706565857,
+                  -1.4341658353805542,
+                  0,
+                  0,
+                  -0.055011067539453506,
+                  -0.23256701231002808,
+                  -0.23256701231002808,
+                  -0.23256701231002808,
+                  -0.08903076499700546,
+                  -0.11366687715053558,
+                  -0.008194483816623688,
+                  -0.12513694167137146,
+                  -0.07325441390275955,
+                  -0.09734192490577698,
+                  -0.01607687398791313,
+                  -0.05330606549978256,
+                  -0.11892083287239075,
+                  -0.003167535178363323,
+                  -0.11892083287239075,
+                  -0.11261050403118134,
+                  0,
+                  5.145742893218994,
+                  4.123319149017334,
+                  4.123319149017334,
+                  5.2074198722839355,
+                  4.223782062530518,
+                  4.223782062530518,
+                  0.783015251159668,
+                  0.33716675639152527,
+                  0.9836537837982178,
+                  0.14592355489730835,
+                  0.14592355489730835,
+                  0.6097924448027053
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "goodbye for now"
+      ],
+      [
+        "en",
+        "bye bye take care"
+      ],
+      [
+        "en",
+        "okay see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "what is your name"
+      ],
+      [
+        "en",
+        "who are you"
+      ],
+      [
+        "en",
+        "tell me your name"
+      ],
+      [
+        "en",
+        "do you have a name"
+      ],
+      [
+        "en",
+        "are you quill"
+      ],
+      [
+        "en",
+        "is your name quill"
+      ],
+      [
+        "en",
+        "your name is quill"
+      ],
+      [
+        "en",
+        "what are you"
+      ],
+      [
+        "en",
+        "are you a bot"
+      ],
+      [
+        "en",
+        "are you an AI"
+      ],
+      [
+        "en",
+        "are you a human"
+      ],
+      [
+        "en",
+        "what is your purpose"
+      ],
+      [
+        "en",
+        "why were you created"
+      ],
+      [
+        "en",
+        "what do you do"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "thankyou"
+      ],
+      [
+        "en",
+        "thanks a lot"
+      ],
+      [
+        "en",
+        "thanks"
+      ],
+      [
+        "en",
+        "thank you so much"
+      ],
+      [
+        "en",
+        "what is NLP"
+      ],
+      [
+        "en",
+        "explain natural language processing"
+      ],
+      [
+        "en",
+        "what does NLP stand for"
+      ],
+      [
+        "en",
+        "what is NLU"
+      ],
+      [
+        "en",
+        "explain natural language understanding"
+      ],
+      [
+        "en",
+        "what does NLU mean"
+      ],
+      [
+        "en",
+        "what is NLG"
+      ],
+      [
+        "en",
+        "explain natural language generation"
+      ],
+      [
+        "en",
+        "what does NLG stand for"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "how are things going"
+      ],
+      [
+        "en",
+        "how is it going"
+      ],
+      [
+        "en",
+        "how do you feel"
+      ],
+      [
+        "en",
+        "tell me a joke"
+      ],
+      [
+        "en",
+        "make me laugh"
+      ],
+      [
+        "en",
+        "say something funny"
+      ],
+      [
+        "en",
+        "give me a joke"
+      ],
+      [
+        "en",
+        "tell me a programmer joke"
+      ],
+      [
+        "en",
+        "say a coding joke"
+      ],
+      [
+        "en",
+        "tell me a joke about programming"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "Goodbye! Take care!"
+          },
+          {
+            "answer": "Goodbye!"
+          },
+          {
+            "answer": "See you next time!"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hi there! How can I help you today?"
+          },
+          {
+            "answer": "Hello! What can I do for you?"
+          }
+        ],
+        "identity.name": [
+          {
+            "answer": "I am your friendly assistant Quill."
+          }
+        ],
+        "identity.name.confirmation": [
+          {
+            "answer": "Yes, my name is Quill."
+          }
+        ],
+        "identity.role": [
+          {
+            "answer": "I am an AI chatbot created to assist you."
+          }
+        ],
+        "identity.purpose": [
+          {
+            "answer": "My purpose is to help you with your queries and make your day easier!"
+          }
+        ],
+        "personal.thankyou": [
+          {
+            "answer": "You’re welcome! Always happy to help."
+          },
+          {
+            "answer": "No problem at all! Let me know if you need anything else."
+          }
+        ],
+        "tech.nlp": [
+          {
+            "answer": "NLP stands for Natural Language Processing, a field of AI focused on understanding human language."
+          }
+        ],
+        "tech.nlu": [
+          {
+            "answer": "NLU stands for Natural Language Understanding, which deals with interpreting the meaning behind words."
+          }
+        ],
+        "tech.nlg": [
+          {
+            "answer": "NLG stands for Natural Language Generation, which involves producing text like a human."
+          }
+        ],
+        "personal.state": [
+          {
+            "answer": "I’m great, thank you! How can I assist you today?"
+          }
+        ],
+        "fun.joke": [
+          {
+            "answer": "Why do programmers prefer dark mode? Because light attracts bugs!"
+          },
+          {
+            "answer": "What’s a coder’s favorite type of music? Algo-rhythm."
+          },
+          {
+            "answer": "How many programmers does it take to change a light bulb? None, that’s a hardware problem."
+          },
+          {
+            "answer": "Why was the function sad? It felt out of scope."
+          },
+          {
+            "answer": "What do programmers say after making a mistake? \"It’s not a bug, it’s a feature!"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
