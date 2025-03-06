@@ -1,0 +1,7 @@
+# Environment file for backend
+.env
+
+# Node.js dependencies
+node_modules/
+
+model.nlp

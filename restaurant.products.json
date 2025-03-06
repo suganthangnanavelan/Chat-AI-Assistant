@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "67827353ba8c8b9582a969e8"
+  },
+  "name": "pizza",
+  "category": "Food",
+  "price": 12.99,
+  "description": "Delicious cheese pizza"
+}]

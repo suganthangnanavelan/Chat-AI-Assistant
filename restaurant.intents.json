@@ -1,0 +1,554 @@
+[{
+  "_id": {
+    "$oid": "6773ec6488cb2713c4ba2c1f"
+  },
+  "intent": "greetings.hello",
+  "utterances": [
+    "hello",
+    "hi",
+    "howdy",
+    "hey",
+    "good morning",
+    "good evening"
+  ],
+  "responses": [
+    "Hi there! How can I help you today?",
+    "Hello! What can I do for you?"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ecbc88cb2713c4ba2c22"
+  },
+  "intent": "greetings.bye",
+  "utterances": [
+    "goodbye for now",
+    "bye bye take care",
+    "okay see you later",
+    "bye for now",
+    "i must go"
+  ],
+  "responses": [
+    "Goodbye! Take care!",
+    "Goodbye!",
+    "See you next time!"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ecf788cb2713c4ba2c25"
+  },
+  "intent": "identity.name",
+  "utterances": [
+    "what is your name",
+    "who are you",
+    "tell me your name",
+    "do you have a name"
+  ],
+  "responses": [
+    "I am your friendly assistant Quill."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ed2488cb2713c4ba2c28"
+  },
+  "intent": "identity.name.confirmation",
+  "utterances": [
+    "are you quill?",
+    "is your name quill",
+    "your name is quill"
+  ],
+  "responses": [
+    "Yes",
+    "my name is Quill."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ed5688cb2713c4ba2c2b"
+  },
+  "intent": "identity.role",
+  "utterances": [
+    "what are you",
+    "are you a bot",
+    "are you an AI",
+    "are you a human"
+  ],
+  "responses": [
+    "I am an AI chatbot created to assist you."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ed7f88cb2713c4ba2c2e"
+  },
+  "intent": "identity.purpose",
+  "utterances": [
+    "what is your purpose",
+    "why were you created",
+    "what do you do"
+  ],
+  "responses": [
+    "My purpose is to help you with your queries and make your day easier!"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773edbc88cb2713c4ba2c31"
+  },
+  "intent": "personal.thankyou",
+  "utterances": [
+    "thank you",
+    "thankyou",
+    "thanks a lot",
+    "thanks",
+    "thank you so much"
+  ],
+  "responses": [
+    "You’re welcome! Always happy to help.",
+    "No problem at all! Let me know if you need anything else."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ede688cb2713c4ba2c34"
+  },
+  "intent": "tech.nlp",
+  "utterances": [
+    "what is NLP",
+    "explain natural language processing",
+    "what does NLP stand for"
+  ],
+  "responses": [
+    "NLP stands for Natural Language Processing",
+    "a field of AI focused on understanding human language."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ee1588cb2713c4ba2c37"
+  },
+  "intent": "tech.nlu",
+  "utterances": [
+    "what is NLU",
+    "explain natural language understanding",
+    "what does NLU mean"
+  ],
+  "responses": [
+    "NLU stands for Natural Language Understanding",
+    "which deals with interpreting the meaning behind words."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ee3c88cb2713c4ba2c3a"
+  },
+  "intent": "tech.nlg",
+  "utterances": [
+    "what is NLG",
+    "explain natural language generation",
+    "what does NLG stand for"
+  ],
+  "responses": [
+    "NLG stands for Natural Language Generation",
+    "which involves producing text like a human."
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773ee7c88cb2713c4ba2c3d"
+  },
+  "intent": "personal.state",
+  "utterances": [
+    "how are you",
+    "how are things going",
+    "how is it going",
+    "how do you feel"
+  ],
+  "responses": [
+    "I’m great",
+    "thank you! How can I assist you today?"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6773eee288cb2713c4ba2c40"
+  },
+  "intent": "fun.joke",
+  "utterances": [
+    "tell me a joke",
+    "make me laugh",
+    "say something funny",
+    "tell me a joke about programming"
+  ],
+  "responses": [
+    "Why do programmers prefer dark mode? Because light attracts bugs!",
+    "What’s a coder’s favorite type of music? Algo-rhythm.",
+    "How many programmers does it take to change a light bulb? None that’s a hardware problem.",
+    "Why was the function sad? It felt out of scope.",
+    "What do programmers say after making a mistake? \"It’s not a bug it’s a feature!"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67828948ba8c8b9582a969f4"
+  },
+  "intent": "order.selectProduct",
+  "utterances": [
+    "I want to order %product%",
+    "I want to buy %product%",
+    "I would like to order %product%"
+  ],
+  "responses": [
+    "You selected {{ product }}. How many would you like to order?"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67828948ba8c8b9582a969f5"
+  },
+  "intent": "order.specifyQuantity",
+  "utterances": [
+    "I want %quantity% %product%",
+    "I need %quantity%",
+    "Can I get %quantity%?",
+    "I'd like %quantity%",
+    "Please give me %quantity%"
+  ],
+  "responses": [
+    "You want {{ quantity }} {{ product }}. Shall I place the order?",
+    "Got it! {{ quantity }} {{ product }}. Would you like me to proceed with the order?",
+    "Alright! {{ quantity }} {{ product }}. Should I confirm the order?"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67828948ba8c8b9582a969f6"
+  },
+  "intent": "order.placeOrder",
+  "utterances": [
+    "Yes, place the order",
+    "Please confirm the order",
+    "Proceed with the order",
+    "Go ahead with the order",
+    "Place the order for me"
+  ],
+  "responses": [
+    "Great! I am placing your order for {{ quantity }} {{ product }}.",
+    "Sure! Your order for {{ quantity }} {{ product }} is being placed.",
+    "Okay! I am confirming your order for {{ quantity }} {{ product }}."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9182"
+  },
+  "intent": "place_order",
+  "utterances": [
+    "How can I place an order?",
+    "What is the process to place an order?",
+    "Can you guintente me on placing an order?",
+    "How do I order?"
+  ],
+  "responses": [
+    "To place an order, simply browse our menu, select your desired items, and proceed to checkout. You can pickup at store by paying online or pay at store."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9183"
+  },
+  "intent": "cuisines_offered",
+  "utterances": [
+    "What cuisines do you offer?",
+    "Can you tell me about the cuisines available?",
+    "What type of food do you serve?",
+    "What are your cuisine options?"
+  ],
+  "responses": [
+    "We offer a diverse range of Indian cuisines, including South Indian and North Indian. Explore our menu to discover delicious options!"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9184"
+  },
+  "intent": "customize_order",
+  "utterances": [
+    "Can I customize my order?",
+    "Is it possible to make changes to my order?",
+    "Can I modify my order?",
+    "Can I change my order items?"
+  ],
+  "responses": [
+    "Yes, you can customize your order. Just select the item you want to customize during the ordering process, and you'll be prompted to make modifications."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9185"
+  },
+  "intent": "discounts_promotions",
+  "utterances": [
+    "Are there any discounts or promotions available?",
+    "Do you have any current offers?",
+    "What promotions are currently running?",
+    "Can I get a discount?"
+  ],
+  "responses": [
+    "Check our product section for current discounts and offers. We also run special promotions, so keep an eye out for those!"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9186"
+  },
+  "intent": "track_order",
+  "utterances": [
+    "How can I track my order?",
+    "Where can I see my order status?",
+    "Can you help me track my order?",
+    "How do I know the status of my order?"
+  ],
+  "responses": [
+    "Once your order is confirmed, you can track its status in real time through the 'My Account' section to track order on our app."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9187"
+  },
+  "intent": "payment_methods",
+  "utterances": [
+    "What payment methods do you accept?",
+    "How can I pay for my order?",
+    "What are the accepted payment options?",
+    "Can I pay by credit card?"
+  ],
+  "responses": [
+    "We accept various square pay payment methods, including credit/debit cards. Choose your preferred option during checkout."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9188"
+  },
+  "intent": "refund_policy",
+  "utterances": [
+    "What is your refund policy?",
+    "Can I get a refund?",
+    "How does your refund process work?",
+    "What should I do if I want a refund?"
+  ],
+  "responses": [
+    "If you have any issues with your order, please contact our customer support for assistance."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9189"
+  },
+  "intent": "create_account",
+  "utterances": [
+    "How do I create an account?",
+    "What steps do I follow to sign up?",
+    "Can you help me with account creation?",
+    "How can I register?"
+  ],
+  "responses": [
+    "To create an account, click on the 'Account menu' and follow the prompts to enter your details and click the Signup button."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b918a"
+  },
+  "intent": "reset_password",
+  "utterances": [
+    "How do I reset my password?",
+    "I've forgotten my password, what should I do?",
+    "Can you guintente me to reset my password?",
+    "What if I can't remember my password?"
+  ],
+  "responses": [
+    "If you've forgotten your password, click on 'Forgot Your Password?' link on the login screen. Follow the instructions sent to your email to reset your password."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b918b"
+  },
+  "intent": "edit_cancel_order",
+  "utterances": [
+    "Can I edit or cancel my order after placing it?",
+    "Is it possible to change my order?",
+    "How do I cancel my order?",
+    "Can I modify or cancel my order?"
+  ],
+  "responses": [
+    "Once an order is confirmed, it cannot be edited. An order can be canceled only before the order is picked up by the Restaurant. For cancellations, please contact our customer support as soon as possible for assistance."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b918c"
+  },
+  "intent": "estimated_delivery_time",
+  "utterances": [
+    "What is the estimated delivery time?",
+    "How long will it take for my order to arrive?",
+    "What is the delivery time for orders?",
+    "When can I expect my order to be delivered?"
+  ],
+  "responses": [
+    "The estimated delivery time is 20 to 30 minutes. It may vary based on the order volume."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b918d"
+  },
+  "intent": "provintente_feedback",
+  "utterances": [
+    "How do I provintente feedback on my order?",
+    "Can I share my feedback?",
+    "Where can I give my opinions on the order?",
+    "How do I submit my feedback?"
+  ],
+  "responses": [
+    "We value your feedback! After your order is delivered, you can contact us through our website's contact us page to share opinions to help us improve."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b918e"
+  },
+  "intent": "food_safety_hygiene",
+  "utterances": [
+    "What measures are taken for food safety and hygiene?",
+    "How do you ensure food safety?",
+    "What hygiene protocols are followed?",
+    "Is the food prepared safely?"
+  ],
+  "responses": [
+    "We prioritize food safety and hygiene. Our partner restaurants adhere to strict cleanliness standards, and our delivery process follows hygiene protocols."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b918f"
+  },
+  "intent": "save_delivery_addresses",
+  "utterances": [
+    "Can I save multiple delivery addresses?",
+    "Is it possible to store different addresses for delivery?",
+    "How do I manage my delivery addresses?",
+    "Can I add more than one delivery address?"
+  ],
+  "responses": [
+    "Yes, you can save multiple delivery addresses in your account. This makes it convenient for you to choose the right location for each order."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9190"
+  },
+  "intent": "seasonal_menu_items",
+  "utterances": [
+    "Are there any seasonal or limited-time menu items?",
+    "Do you have any special menu items right now?",
+    "What limited time dishes do you offer?",
+    "Can I find seasonal specials on your menu?"
+  ],
+  "responses": [
+    "Yes, we often introduce seasonal or limited time menu items. Explore our 'Specials' section to discover new and exciting offerings."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9191"
+  },
+  "intent": "contact_customer_support",
+  "utterances": [
+    "How can I contact customer support?",
+    "What is the way to reach customer service?",
+    "Can you tell me how to get in touch with support?",
+    "How do I speak to customer support?"
+  ],
+  "responses": [
+    "You can contact our customer support through the 'Contact Us' page on our website. We're here to assist you with any questions or concerns."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9192"
+  },
+  "intent": "reorder_previous_order",
+  "utterances": [
+    "Can I reorder a previous order?",
+    "How do I repeat an order?",
+    "Can I get my last order again?",
+    "What’s the process for reordering?"
+  ],
+  "responses": [
+    "Absolutely! You can easily reorder a previous order from the 'Order History' section in your account. It's a quick way to get your favorites again."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9193"
+  },
+  "intent": "out_of_stock_item",
+  "utterances": [
+    "What happens if an item I ordered is out of stock?",
+    "What do I do if something I want is unavailable?",
+    "Can I get notified if an item is out of stock?",
+    "What should I do if an item is missing from my order?"
+  ],
+  "responses": [
+    "If an item is out of stock, we'll notify you during the checkout process. You can either remove it or replace it with an alternative."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9194"
+  },
+  "intent": "update_account_information",
+  "utterances": [
+    "How can I update my account information?",
+    "What steps do I follow to change my account details?",
+    "Can I edit my profile?",
+    "How do I modify my account information?"
+  ],
+  "responses": [
+    "To update your account information, go to the 'Profile' or 'Account Settings' section in the app. You can edit your details there."
+  ]
+},
+{
+  "_id": {
+    "$oid": "6794ca6667bb1170867b9195"
+  },
+  "intent": "online_payment_security",
+  "utterances": [
+    "What security measures are in place for online payments?",
+    "How do you ensure my payment information is safe?",
+    "Is online payment secure?",
+    "What safeguards do you have for transactions?"
+  ],
+  "responses": [
+    "We use secure payment gateways to ensure the safety of your transactions. Your payment information is encrypted and protected during the entire process."
+  ]
+}]
